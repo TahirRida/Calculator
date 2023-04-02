@@ -1,12 +1,79 @@
+/*importing font for calculator*/
+@font-face {
+    font-family:"Calculator";
+    src :url(Calculator.ttf);
+}
+
+
 /*Centering the calclator on the page*/
 body {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    margin : 0px;
 }
-
-.calculator{
+.footer {
+    margin-top : 115px;
+}
+.container {
+    display : flex;
+    flex-direction:column;
+    justify-content : center;
+    align-items : center;
+}
+/*styling the calculator*/
+.title {
+    font-family: "Calculator";
+}
+.calculator {
+    margin-top : 20px;
+    background-color: gainsboro;
+    width: 300px;
+    height: auto;
+    padding:10px;
+    padding-top:20px;
+    border : solid 1px black;
+    border-radius :3%;
+}
+/*styling the display section*/
+.LCD {
     background-color:gray;
-    padding:15px;
+    height : 60px;
+}
+button {
+    margin-top:10px;
+    border : solid 1px black;
+    width : 60px;
+    Height:40px;
+    border-radius : 10%;
+}  
+.line {
+    display:flex;
+    gap:10px;
+}
+.operation {
+    margin-left : 40px;
 }
 
+.footer {
+    background-color : gainsboro;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+}
+button:hover {
+    background-color : gray;
+}
+.githubIcons {
+    width:20px;
+    height:20px;
+    margin-left : 10px;
+}
+.githubIcons:hover {
+    /*transform :scale(1.2);*/
+    transform :scale(1.5);
+}
+#LastSelected {
+    color : white;
+    margin-top:-20px;
+    font-size:40px;
+    padding-left : 250px;
+    font-family :"Calculator";
+}
