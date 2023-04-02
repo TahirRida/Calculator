@@ -1,0 +1,12 @@
+/*Centering the calclator on the page*/
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.calculator{
+    background-color:gray;
+    padding:15px;
+}
+
