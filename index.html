@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="icon" href="Calculator.webp" type="image/x-icon"/>
     <title>Calculator</title>
 </head>
 <body>
     <div class="container">
         <!--The title of the website-->
-        <h1 class="title">Calculator</h1>
+        <h1 class="title" id="title">Calculator</h1>
         <!--here is the container of the calculator-->
         <div class="calculator">
             <!--Here is where selected numbers and the result will be displayed-->
             <div class="LCD">
                 <br><br>
                 <p id="LastSelected">
-                    40
+                    0
                 </p>
             </div>
             <!--From now on we'll create multiple lines of buttons that represents the buttons of the calculator-->
             <div class="buttons">
                 <div class="line">
-                    <button class="clear" onclick="clear()">Clear</button>
+                    <button id="clear">Clear</button>
                 </div>
                 <div class="line">
                     <button id="7" >7</button>
@@ -51,9 +51,9 @@
                     </div>
                 </div>
                 <div class="line">
-                    <button ></button>
+                    <button id=".">.</button>
                     <button id="0" >0</button>
-                    <button >=</button>
+                    <button id ="=">=</button>
                     <div class="operation">
                         <button id="+">+</button>
                     </div>
@@ -69,12 +69,7 @@
     <div class="footer">
         <p class="footerText">© All rights reserved, </p> <a href="https://github.com/TahirRida"><img class="githubIcons" src="github.png"></a>
     </div>
-    <script>
-        let date = new Date();
-        let footerText = document.querySelector(".footerText");
-        footerText.textContent +=date.getFullYear();
-    </script>
-
+    <script src="script.js"></script>
 
     
 </body>
